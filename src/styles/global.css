@@ -1,0 +1,93 @@
+/* ==========================
+	setting the default 
+    website layout
+========================== */
+
+body,
+html {
+	margin: 0 !important;
+	background-color: var(--white);
+	scroll-behavior: smooth !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	/* margin: 0 0 0.5em 0; */
+	font-weight: 400;
+	line-height: 1.2;
+}
+
+body {
+	color: var(--black);
+	background-color: var(--whitev2);
+	margin: 0 !important;
+	font-family: Roboto;
+	font-size: 14px;
+	line-height: 1.5;
+	/* 
+    MOBILE 
+    disable pinchin & user zooming on */
+	touch-action: pan-x pan-y;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* ==========================
+    VARIABLE FONT SIZES 
+    & other STYLES for text
+========================== */
+
+/* DEFAULT METAFUND CSS VALUES HEADINGS */
+
+h1 {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 64px;
+}
+h2 {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+}
+h3 {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+}
+h4 {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+}
+h5 {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+
+/* DEFAULT METAFUND CSS VALUES TEXT */
+
+text1 {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+  }
