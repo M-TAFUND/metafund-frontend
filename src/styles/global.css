@@ -1,44 +1,4 @@
 /* ==========================
-	setting the default 
-    website layout
-========================== */
-
-body,
-html {
-	margin: 0 !important;
-	background-color: var(--white);
-	scroll-behavior: smooth !important;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	/* margin: 0 0 0.5em 0; */
-	font-weight: 400;
-	line-height: 1.2;
-}
-
-body {
-	color: var(--black);
-	background-color: var(--whitev2);
-	margin: 0 !important;
-	font-family: Roboto;
-	font-size: 14px;
-	line-height: 1.5;
-	/* 
-    MOBILE 
-    disable pinchin & user zooming on */
-	touch-action: pan-x pan-y;
-}
-
-* {
-	box-sizing: border-box;
-}
-
-/* ==========================
     VARIABLE FONT SIZES 
     & other STYLES for text
 ========================== */
