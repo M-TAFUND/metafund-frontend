@@ -34,6 +34,7 @@
       </p>
     </div>
   </div>
+  <div class="box-3-4" />
 </div>
 
 <!-- ===================
@@ -205,11 +206,11 @@
     /* FIRST BLOCK */
 
     .container-1 {
-      max-width: 705px;
+      max-width: 920px;
     }
 
     .box-1 {
-      flex-basis: 97%;
+      flex-basis: 95%;
     }
 
     .box-2 {
@@ -228,7 +229,7 @@
 
     .container-2 {
       margin-top: -150px;
-      max-width: 705px;
+      max-width: 920px;
       overflow: hidden;
       display: flex;
       flex-wrap: wrap;
@@ -239,7 +240,7 @@
     .box-1-2 {
       padding-top: 52px;
       padding-bottom: 52px;
-      flex-basis: 35%;
+      flex-basis: 32%;
       border-top: 1px solid rgba(255, 255, 255, 0.16);
       border-bottom: 1px solid rgba(255, 255, 255, 0.16);
     }
@@ -247,7 +248,7 @@
     .box-2-2 {
       padding-top: 52px;
       padding-bottom: 52px;
-      flex-basis: 62.5%;
+      flex-basis: 64%;
       border-top: 1px solid rgba(255, 255, 255, 0.16);
       border-bottom: 1px solid rgba(255, 255, 255, 0.16);
     }
@@ -255,10 +256,10 @@
     .box-3-3 {
       padding-top: 52px;
       padding-bottom: 52px;
-      flex-basis: 85%;
+      flex-basis: 95%;
       border-left: none;
       border-top: none;
-      border-bottom: none;
+      border-bottom: 0px;
     }
 
     .buy_button {
@@ -269,7 +270,7 @@
       gap: 24px;
       border: none;
 
-      width: 440px;
+      width: 460px;
       height: 56px;
 
       /* colors/violet */
@@ -291,7 +292,19 @@
 
     .launch_soon {
       width: 380px;
-      margin-top: -10px;
+      margin-top: 0px;
+    }
+
+    .box-3-4 {
+      margin-top: -100px;
+      flex-basis: 100%;
+      align-items: flex-start;
+      background-image: url("/assets/img/metafund_icon_illustration.svg");
+      width: 920px;
+      height: 756.57px;
+      transform: translateX(0%);
+      background-position: center;
+      display: inline-block;
     }
   }
 
@@ -301,7 +314,7 @@
     /* FIRST BLOCK */
 
     .container-1 {
-      max-width: 620px;
+      max-width: 695px;
     }
 
     .box-1 {
@@ -320,22 +333,26 @@
     /* SECOND BLOCK */
 
     .container-2 {
-      margin-top: -110px;
-      max-width: 620px;
+      margin-top: -220px;
+      max-width: 695px;
     }
 
     .box-1-2 {
-      padding-top: 52px;
-      padding-bottom: 52px;
-      flex-basis: 45%;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      flex-basis: 50%;
     }
 
     .box-2-2 {
-      flex-basis: 35%;
+      padding-top: 20px;
+      padding-bottom: 25px;
+      flex-basis: 40%;
     }
 
     .box-3-3 {
       flex-basis: 85%;
+      padding-bottom: 25px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.16);
     }
 
     .buy_button {
@@ -343,7 +360,7 @@
     }
 
     .h3_small {
-      width: 220px;
+      width: 290px;
     }
 
     .launch_soon {
@@ -351,35 +368,48 @@
       margin-top: -10px;
     }
 
-    /* MOBILE RESOLUTIONS */
+    .box-3-4 {
+      margin-top: 0px;
+      flex-basis: 100%;
+      align-items: flex-start;
+      background-image: url("/assets/img/metafund_icon_illustration.svg");
+      width: 695px;
+      height: 756.57px;
+      transform: translateX(0%);
+      background-position: center;
+      display: inline-block;
+    }
+  }
 
-    /* <---- 500px */
+  /* MOBILE RESOLUTIONS */
 
-    @media only screen and (max-width: 500px) {
-      /* FIRST BLOCK */
+  /* <---- 500px */
 
-      .container-1 {
-        max-width: 500px;
-      }
+  @media only screen and (max-width: 500px) {
+    /* FIRST BLOCK */
 
-      .box-1 {
-        flex-basis: 92%;
-      }
+    .container-1 {
+      max-width: 500px;
+      flex-wrap: wrap;
+    }
 
-      .MainTitle {
-        margin-top: 160px;
-        font-weight: 700;
-        font-size: 28px;
-        line-height: 34px;
-        width: auto;
-      }
+    .box-1 {
+      flex-basis: 92%;
+    }
 
-      .SubTitle {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 22px;
-        width: auto;
-      }
+    .MainTitle {
+      margin-top: 130px;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 34px;
+      width: auto;
+    }
+
+    .SubTitle {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      width: auto;
     }
 
     /* SECOND BLOCK */
@@ -392,17 +422,19 @@
     .box-1-2 {
       padding-top: 25px;
       padding-bottom: 25px;
-      flex-basis: 46;
+      flex-basis: 40%;
     }
 
     .box-2-2 {
-      padding-top: 25px;
+      padding-top: 20px;
       padding-bottom: 25px;
-      flex-basis: 46%;
+      flex-basis: 40%;
     }
 
     .box-3-3 {
       flex-basis: 82%;
+      padding-bottom: 25px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.16);
     }
 
     .buy_button {
@@ -434,30 +466,144 @@
       margin-top: -10px;
     }
 
-    /* <---- 320px */
+    .box-3-4 {
+      margin-top: 0px;
+      flex-basis: 100%;
+      height: 357px;
+      align-items: flex-start;
+      background-image: url("/assets/img/metafund_icon_illustration.svg");
+      background-size: 200%;
+      background-position: center;
+    }
+  }
 
-    @media only screen and (max-width: 320px) {
-      /* FIRST BLOCK */
+  /* <---- 375px */
 
-      .box-1 {
-        height: 700px;
-        flex-basis: 95%;
-      }
+  @media only screen and (max-width: 375px) {
+    /* FIRST BLOCK */
 
-      .MainTitle {
-        margin-top: 120px;
-        font-weight: 700;
-        font-size: 28px;
-        line-height: 34px;
-        width: 280px;
-      }
+    .container-1 {
+      max-width: 375px;
+    }
 
-      .SubTitle {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 22px;
-        width: 250px;
-      }
+    .box-1 {
+      flex-basis: 92%;
+    }
+
+    .MainTitle {
+      margin-top: 110px;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 34px;
+    }
+
+    .SubTitle {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    /* SECOND BLOCK */
+
+    .container-2 {
+      margin-top: -350px;
+      max-width: 375px;
+    }
+
+    .box-1-2 {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      flex-basis: 45%;
+    }
+
+    .box-2-2 {
+      padding-top: 20px;
+      padding-bottom: 25px;
+      flex-basis: 45%;
+    }
+
+    .box-3-3 {
+      flex-basis: 92%;
+      padding-bottom: 25px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .buy_button {
+      width: 160px;
+    }
+
+    .h3_small {
+      width: 150px;
+    }
+
+    .launch_soon {
+      width: 300px;
+      margin-top: -10px;
+    }
+  }
+
+  /* <---- 320px */
+
+  @media only screen and (max-width: 320px) {
+    /* FIRST BLOCK */
+
+    .container-1 {
+      max-width: 320px;
+    }
+
+    .box-1 {
+      flex-basis: 95%;
+    }
+
+    .MainTitle {
+      margin-top: 100px;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 34px;
+    }
+
+    .SubTitle {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    /* SECOND BLOCK */
+
+    .container-2 {
+      margin-top: -350px;
+      max-width: 320px;
+    }
+
+    .box-1-2 {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      flex-basis: 40%;
+    }
+
+    .box-2-2 {
+      padding-top: 20px;
+      padding-bottom: 25px;
+      flex-basis: 40%;
+    }
+
+    .box-3-3 {
+      flex-basis: 92%;
+      padding-bottom: 25px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .buy_button {
+      width: 160px;
+    }
+
+    .h3_small {
+      width: 130px;
+    }
+
+    .launch_soon {
+      width: 300px;
+      margin-top: -10px;
     }
   }
 </style>
