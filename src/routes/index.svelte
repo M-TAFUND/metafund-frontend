@@ -30,11 +30,30 @@
   <div class="box-3-3">
     <div>
       <p class="launch_soon">
-        The official launch date of MTF public presale will be available soon!
+        {content_en.official_launch}
+      </p>
+      <p class="launch_soon">
+        <b>{content_en.official_launch_2}</b>
       </p>
     </div>
   </div>
   <div class="box-3-4" />
+</div>
+<div class="container-3">
+  <div class="box-1-3">
+    <h3 class="h3_small_bigger">{content_en.mail_form}</h3>
+  </div>
+  <div class="box-2-3">
+    <form
+      action="mailto:jonsnowpt194@gmail.com
+    "
+      method="POST"
+      target="_blank"
+    >
+      <input class="inputMailMeta" placeholder="your@email.com" type="email" />
+      <input class="inputMailMetaSubmit" type="submit" value="Subscribe" />
+    </form>
+  </div>
 </div>
 
 <!-- ===================
@@ -63,14 +82,16 @@
 
   .box-2 {
     height: 700px;
+    overflow: hidden;
+    position: fixed;
     flex-basis: 50%;
     align-items: flex-start;
-    position: fixed;
     background-image: url("/assets/img/metafund_icon_illustration.svg");
     width: 1229px;
     height: 756.57px;
     transform: translateX(30%);
     display: inline-block;
+    z-index: -1000000;
   }
 
   .MainTitle {
@@ -93,6 +114,7 @@
 
   .container-2 {
     margin: 0 auto;
+    padding-bottom: 150px;
     max-width: 1216px;
     overflow: hidden;
     display: flex;
@@ -105,6 +127,7 @@
     padding-top: 52px;
     padding-bottom: 52px;
     flex-basis: 25%;
+    background-color: rgba(27, 8, 62, 0.3);
     border-top: 1px solid rgba(255, 255, 255, 0.16);
     border-bottom: 1px solid rgba(255, 255, 255, 0.16);
   }
@@ -113,14 +136,16 @@
     padding-top: 52px;
     padding-bottom: 52px;
     flex-basis: 25%;
+    background-color: rgba(27, 8, 62, 0.3);
     border-top: 1px solid rgba(255, 255, 255, 0.16);
     border-bottom: 1px solid rgba(255, 255, 255, 0.16);
   }
 
   .box-3-3 {
-    padding-top: 52px;
+    padding-top: 64px;
     padding-bottom: 52px;
     flex-basis: 49%;
+    background-color: rgba(27, 8, 62, 0.3);
     border-left: 1px solid rgba(255, 255, 255, 0.16);
     border-top: 1px solid rgba(255, 255, 255, 0.16);
     border-bottom: 1px solid rgba(255, 255, 255, 0.16);
@@ -169,7 +194,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 12px;
     text-align: center;
     justify-content: center;
     color: #d8d7dc;
@@ -178,9 +203,100 @@
     margin-left: auto;
   }
 
+  /* THIRD BLOCK */
+
+  .container-3 {
+    margin: 0 auto;
+    max-width: 1216px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    background-image: url("/assets/img/mail_background.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .box-1-3 {
+    padding-top: 34px;
+    height: 700px;
+    flex-basis: 40%;
+  }
+
+  .box-2-3 {
+    padding-top: 58px;
+    flex-basis: 50%;
+  }
+
+  .h3_small_bigger {
+    width: 389px;
+
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+
+    color: #fcfcfc;
+  }
+
+  .inputMailMeta {
+    /* Rectangle 1 */
+    width: 95%;
+    height: 64px;
+    z-index: 9999999999999999;
+
+    padding-left: 20px;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #fcfcfc;
+
+    /* shapes/background */
+
+    background: #0d0427;
+    opacity: 0.32;
+    border-radius: 100px;
+    border-color: #0d0427;
+    color: #fcfcfc;
+  }
+
+  .inputMailMetaSubmit {
+    /* Auto layout */
+    position: absolute;
+    margin-left: -150px;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 32px;
+    gap: 8px;
+    cursor: pointer;
+    z-index: 9999999999999999999999999;
+
+    width: 147px;
+    height: 68px;
+
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+
+    color: #fcfcfc;
+
+    /* shapes/background */
+
+    background: #0d0427;
+    border-radius: 100px;
+    border-color: #0d0427;
+  }
+
   /* DESKTOP RESOLUTIONS */
 
-  /* <---- 1366px */
+  /* <---- 1228px */
 
   @media only screen and (max-width: 1228px) {
     /* FIRST BLOCK */
@@ -197,6 +313,29 @@
       height: 756.57px;
       transform: translateX(30%);
       display: inline-block;
+    }
+
+    /* THIRD BLOCK */
+
+    .container-3 {
+      max-width: 1228px;
+      background-size: cover;
+    }
+
+    .box-1-3 {
+      height: 120px;
+      flex-basis: 30%;
+    }
+
+    .box-2-3 {
+      padding-top: 0px;
+      height: 120px;
+      flex-basis: 80%;
+    }
+
+    .h3_small_bigger {
+      width: 350px;
+      text-align: center;
     }
   }
 
@@ -215,6 +354,7 @@
 
     .box-2 {
       flex-basis: 50%;
+      position: fixed;
       align-items: flex-start;
       background-image: none;
     }
@@ -306,6 +446,67 @@
       background-position: center;
       display: inline-block;
     }
+
+    /* THIRD BLOCK */
+
+    .container-3 {
+      margin: 0 auto;
+      margin-top: -220px;
+      max-width: 85%;
+      background-size: cover;
+    }
+
+    .box-1-3 {
+      height: 120px;
+      flex-basis: 30%;
+    }
+
+    .box-2-3 {
+      padding-top: 0px;
+      height: 120px;
+      flex-basis: 80%;
+    }
+
+    .h3_small_bigger {
+      width: 350px;
+      text-align: center;
+    }
+
+    .inputMailMeta {
+      /* Rectangle 1 */
+      width: 90%;
+      height: 64px;
+      z-index: 9999999999999999;
+    }
+
+    .inputMailMetaSubmit {
+      /* Auto layout */
+      position: absolute;
+      margin-left: -115px;
+      justify-content: center;
+      align-items: center;
+      padding: 14px 32px;
+      gap: 8px;
+      cursor: pointer;
+      z-index: 9999999999999999999999999;
+
+      width: 147px;
+      height: 68px;
+
+      font-family: "Sora";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+
+      color: #fcfcfc;
+
+      /* shapes/background */
+
+      background: #0d0427;
+      border-radius: 100px;
+      border-color: #0d0427;
+    }
   }
 
   /* <---- 695px */
@@ -319,6 +520,10 @@
 
     .box-1 {
       flex-basis: 90%;
+    }
+
+    .box-2 {
+      position: fixed;
     }
 
     .MainTitle {
@@ -366,6 +571,7 @@
     .launch_soon {
       width: 380px;
       margin-top: -10px;
+      line-height: 20px;
     }
 
     .box-3-4 {
@@ -378,6 +584,13 @@
       transform: translateX(0%);
       background-position: center;
       display: inline-block;
+    }
+
+    /* THIRD BLOCK */
+
+    .inputMailMetaSubmit {
+      /* Auto layout */
+      margin-left: -125px;
     }
   }
 
@@ -475,6 +688,54 @@
       background-size: 200%;
       background-position: center;
     }
+
+    /* THIRD BLOCK */
+
+    .container-3 {
+      margin-top: -150px;
+      max-width: 100%;
+    }
+
+    .box-1-3 {
+      flex-basis: 78%;
+    }
+
+    .box-2-3 {
+      height: 150px;
+      flex-basis: 89%;
+    }
+
+    .h3_small_bigger {
+      width: 268px;
+
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    .inputMailMeta {
+      /* Rectangle 1 */
+      width: 93%;
+      height: 48px;
+
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    .inputMailMetaSubmit {
+      /* Auto layout */
+      margin-top: 10px;
+      position: absolute;
+      margin-left: 0;
+      padding: 10px 32px;
+      gap: 8px;
+
+      width: 86%;
+      height: 48px;
+
+      font-size: 14px;
+    }
   }
 
   /* <---- 375px */
@@ -538,6 +799,7 @@
 
     .launch_soon {
       width: 300px;
+      line-height: 22px;
       margin-top: -10px;
     }
   }
@@ -602,7 +864,7 @@
     }
 
     .launch_soon {
-      width: 300px;
+      width: 290px;
       margin-top: -10px;
     }
   }
